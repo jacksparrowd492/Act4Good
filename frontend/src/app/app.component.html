@@ -1,0 +1,18 @@
+<!-- app.component.html -->
+
+<nav class="navbar">
+  <div class="navbar-title">{{ title }}</div>
+  <ul class="navbar-menu">
+      <li><a href="#" (click)="login()" *ngIf="!isLoggedIn">Login</a></li>
+      <li><a href="#" (click)="register()" *ngIf="!isLoggedIn">Register</a></li>
+      <li><a href="#" (click)="logout()" *ngIf="isLoggedIn">Logout</a></li>
+      <li><a href="#" (click)="navigateToAdminDashboard()" *ngIf="isAdmin">Admin Dashboard</a></li> <!-- New admin menu item -->
+  </ul>
+</nav>
+
+<div class="container">
+  <app-sidebar (contentLoad)="loadContent($event)"></app-sidebar>
+  <div class="content">
+      <router-outlet></router-outlet>
+  </div>
+</div>

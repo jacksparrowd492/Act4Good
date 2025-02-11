@@ -1,0 +1,9 @@
+{
+  "routes": [
+    "/",
+    "/adminDashboard",
+    "/createPost",
+    "/getAllPosts",
+    "/getMyPosts"
+  ]
+}

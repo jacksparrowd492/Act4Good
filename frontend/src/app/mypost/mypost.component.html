@@ -1,0 +1,21 @@
+<!-- mypost.component.html -->
+
+<div *ngIf="displayedPostList && displayedPostList.length > 0; else noPosts">
+    <div class="post" *ngFor="let post of displayedPostList; let i = index">
+        <div class="post-header">
+            <div class="post-title">{{post.title}}</div>
+        </div>
+        <div class="post-content">{{post.content}}</div>
+        <div *ngIf="post.attachment">
+            <a [href]="post.attachment" target="_blank">View Attachment</a>
+        </div>
+        <div class="post-actions">
+            <span>{{ post.likes && post.likes.length }} likes</span>
+        </div>
+    </div>
+</div>
+<ng-template #noPosts>
+    <div class="no-posts-container">
+        <p>No Posts available</p>
+    </div>
+</ng-template>

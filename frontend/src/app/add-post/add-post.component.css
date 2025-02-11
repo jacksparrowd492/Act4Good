@@ -1,0 +1,88 @@
+/* add-post.component.css */
+
+.update-form-container {
+    position: relative;
+    padding: 2vmax;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2vmax auto;
+}
+
+.update-form-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5vmax;
+}
+
+.update-form-container .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+}
+
+.update-form-container .close-btn:hover {
+    color: #333;
+}
+
+.update-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.update-form input[type="text"],
+.update-form input[type="number"],
+.update-form input[type="date"] {
+    width: calc(100% - 12px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.update-form input[type="text"]:focus,
+.update-form input[type="number"]:focus,
+.update-form input[type="date"]:focus {
+    border-color: #0056b3;
+}
+
+.update-form button[type="submit"],
+.update-form button[type="button"] {
+    width: 45%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.update-form button[type="submit"]:hover,
+.update-form button[type="button"]:hover {
+    background-color: #218838;
+}
+
+.update-form button[type="button"] {
+    background-color: #dc3545;
+}
+
+.update-form button[type="button"]:hover {
+    background-color: #c82333;
+}
+
+img {
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}

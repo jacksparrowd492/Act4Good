@@ -1,0 +1,82 @@
+<!-- add-post.component.html -->
+
+<div class="update-form-container">
+    <h2>Add Post</h2>
+    <form class="update-form" (ngSubmit)="createPost()">
+      <div>
+        <label for="author">Post Author:</label>
+        <input
+          type="text"
+          id="author"
+          name="author"
+          [(ngModel)]="userDetails.username"
+          readonly
+        />
+      </div>
+      <div>
+        <label for="title">Post Title:</label>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          [(ngModel)]="postCreated.title"
+          required
+        />
+      </div>
+      <div>
+        <label for="content">Post Content:</label>
+        <input
+          type="text"
+          id="content"
+          name="content"
+          [(ngModel)]="postCreated.content"
+          required
+        />
+      </div>
+      <div>
+        <label for="category">Post Category:</label>
+        <input
+          type="text"
+          id="category"
+          name="category"
+          [(ngModel)]="postCreated.category"
+          required
+        />
+      </div>
+      <div>
+        <label for="createdAt">Created At:</label>
+        <input
+          type="text"
+          id="createdAt"
+          name="createdAt"
+          [(ngModel)]="postCreated.createdAt"
+          readonly
+        />
+      </div>
+      <div>
+        <label for="createdAt">Updated At:</label>
+        <input
+          type="text"
+          id="createdAt"
+          name="createdAt"
+          [(ngModel)]="postCreated.updatedAt"
+          readonly
+        />
+      </div>
+      <div>
+        <label for="attachment">Attachments:</label>
+        <input
+          type="text"
+          id="attachment"
+          name="attachment"
+          [(ngModel)]="postCreated.attachment"
+        />
+        <img src="{{postCreated.attachment}}" *ngIf="postCreated.attachment" />
+      </div>
+      <div>
+        <button type="submit">Add Post</button>
+        <button type="button" (click)="closeAddForm()">Clear</button>
+      </div>
+    </form>
+  </div>
+  

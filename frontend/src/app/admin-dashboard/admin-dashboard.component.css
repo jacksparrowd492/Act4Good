@@ -1,0 +1,70 @@
+/* admin-dashboard.component.css */
+
+.admin-dashboard {
+    padding: 2vmax;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2vmax;
+}
+
+.posts-section {
+    margin-bottom: 2vmax;
+}
+
+.posts-section h2 {
+    font-size: 2rem;
+    color: #0056b3;
+    margin-bottom: 1vmax;
+}
+
+.posts-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.posts-section li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1.5vmax;
+    margin-bottom: 1vmax;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.posts-section li:hover {
+    transform: scale(1.02);
+    background-color: #f9f9f9;
+}
+
+.posts-section h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5vmax;
+}
+
+.posts-section p {
+    color: #555;
+    margin-bottom: 0.5vmax;
+}
+
+.posts-section button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8vmax 1.2vmax;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.posts-section button:hover {
+    background-color: #c82333;
+}

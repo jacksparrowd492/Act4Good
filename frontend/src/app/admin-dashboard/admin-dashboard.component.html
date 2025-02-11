@@ -1,0 +1,33 @@
+<!-- admin-dashboard.component.html -->
+
+<div class="admin-dashboard">
+  <h1>Admin Dashboard</h1>
+
+  <div class="posts-section">
+    <h2>Popular Posts</h2>
+    <div *ngIf="popularPosts.length === 0">No popular posts available.</div>
+    <ul *ngIf="popularPosts.length > 0">
+      <li *ngFor="let post of popularPosts">
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.content }}</p>
+        <p>Likes: {{ post.likes.length }}</p>
+        <button (click)="deletePost(post._id)">Delete Post</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="posts-section">
+    <h2>Regular Posts</h2>
+    <div *ngIf="regularPosts.length === 0">No regular posts available.</div>
+    <ul *ngIf="regularPosts.length > 0">
+      <li *ngFor="let post of regularPosts">
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.content }}</p>
+        <p>Likes: {{ post.likes.length }}</p>
+        <button (click)="deletePost(post._id)">Delete Post</button>
+      </li>
+    </ul>
+  </div>
+
+  
+</div>

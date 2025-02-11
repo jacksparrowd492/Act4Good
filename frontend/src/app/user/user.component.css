@@ -1,0 +1,100 @@
+/* user.component.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 50%;
+    margin: 2rem auto;
+    padding: 2vmax;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #0056b3;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 1.1vmax;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #004494;
+}
+
+.error-message {
+    color: #FF0000;
+    background-color: #FFEFEF;
+    padding: 10px;
+    border: 1px solid #FF0000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.success-message {
+    color: green;
+    background-color: rgb(185, 231, 185);
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.admin-message {
+    margin: 2rem auto;
+    padding: 1.5vmax;
+    background-color: #e0f7fa;
+    border: 1px solid #00acc1;
+    border-radius: 10px;
+    text-align: center;
+    color: #00796b;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,54 @@
+/* myposts.component.css */
+
+.post {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.post:hover {
+    transform: scale(1.02);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.post-content {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.post-actions {
+    margin-top: 0.4vmax;
+    font-size: 1rem;
+    color: #777;
+}
+
+.no-posts-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.no-posts-container p {
+    margin: 0;
+    font-size: 1.2rem;
+}
